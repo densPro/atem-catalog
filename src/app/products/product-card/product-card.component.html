@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="imagePath" class="card-img-top" alt="product photo">
+    <div class="card-body">
+        <h5 class="card-title">{{product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <atem-product-detail-modal [product]="product"></atem-product-detail-modal>
+    </div>
+</div>
