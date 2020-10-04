@@ -118,8 +118,13 @@
               "devServerTarget": "atem-catalog:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "atem-catalog"
 }
