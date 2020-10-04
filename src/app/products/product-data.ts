@@ -5,38 +5,38 @@ export class ProductData {
   static products: Product[] = [
     {
       id: 1,
-      name: 'Leaf Rake',
-      description: 'Leaf rake with 48-inch wooden handle',
+      name: 'Trodat 4911',
+      description: 'standart stamp',
       price: 19.95,
-      imageFileName: 'ok'
+      imageFileName: 'trodat_4911.PNG'
     },
     {
       id: 2,
-      name: 'Garden Cart',
-      description: '15 gallon capacity rolling garden cart',
+      name: 'Trodat 4911',
+      description: 'standart stamp',
       price: 32.99,
-      imageFileName: 'ok'
+      imageFileName: 'trodat_4911.PNG'
     },
     {
       id: 5,
-      name: 'Hammer',
-      description: 'Curved claw steel hammer',
+      name: 'Trodat 4911',
+      description: 'standart stamp',
       price: 8.9,
-      imageFileName: 'ok'
+      imageFileName: 'trodat_4911.PNG'
     },
     {
       id: 8,
-      name: 'Saw',
-      description: '15-inch steel blade hand saw',
+      name: 'Trodat 4911',
+      description: 'standart stamp',
       price: 11.55,
-      imageFileName: 'ok'
+      imageFileName: 'trodat_4911.PNG'
     },
     {
       id: 10,
-      name: 'Video Game Controller',
+      name: 'Trodat 4911',
       description: 'Standard two-button video game controller',
       price: 35.95,
-      imageFileName: 'ok'
+      imageFileName: 'trodat_4911.PNG'
     }
   ];
 }

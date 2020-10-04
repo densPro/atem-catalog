@@ -11,6 +11,6 @@ export class ProductCardComponent implements OnChanges {
   imagePath: string;
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.imagePath = `assets/products-photos/${ this.product.imageFileName }.png`;
+    this.imagePath = `assets/products-photos/${ this.product.imageFileName }`;
   }
 }
