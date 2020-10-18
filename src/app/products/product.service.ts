@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { catchError, tap } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 import { Product } from './product';
 import { Observable, throwError } from 'rxjs';
 
@@ -18,7 +18,6 @@ export class ProductService {
   // All products
   products$ = this.http.get<Product[]>(this.productsUrl)
     .pipe(
-      tap(data => console.log('Products', JSON.stringify(data))),
       catchError(this.handleError)
     );
 

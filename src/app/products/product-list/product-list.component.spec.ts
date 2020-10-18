@@ -1,6 +1,10 @@
+import { Component } from '@angular/compiler/src/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MockComponent } from '../../../../jest.setup';
+import { ProductService } from '../product.service';
 import { ProductListComponent } from './product-list.component';
+import { ProductServiceMock } from './product-list.mocks';
 
 describe('ProductListComponent', () => {
   let component: ProductListComponent;
@@ -8,7 +12,13 @@ describe('ProductListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductListComponent ]
+      declarations: [ 
+        ProductListComponent,
+        MockComponent('atem-product-card', { inputs: ['product'],  }  as Component)
+      ],
+      providers: [
+        { provide: ProductService, useClass: ProductServiceMock }
+      ]
     })
     .compileComponents();
   });
